@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="smter">
+
+
+
+
+
+
+
+<title>替换Windows系统字体为更纱黑体 | 树洞</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.font.im/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/menu.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 7.0.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            树洞
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/">Home</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Archive</a>
+              </li> 
+                   
+          
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+                
+                    <span class="post-tag">
+                        <a href="/tags/%E6%95%99%E7%A8%8B/">
+                            教程
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Windows/">
+                            Windows
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/%E5%AD%97%E4%BD%93/">
+                            字体
+                        </a>
+                    </span>    
+                           
+            
+        </div>
+        <div class="post-title">
+            
+            
+                替换Windows系统字体为更纱黑体
+            
+            
+        </div>
+        <span class="post-date">
+            2022.04.14
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <div class="h-line-primary"></div>
+              
+    </div>
+</div>
+    <div class="post-content">
+    <p>首先是需要到 <a target="_blank" rel="noopener" href="https://github.com/codehz/YaHei-Build">https://github.com/codehz/YaHei-Build</a><br>这里下载一个字体包<br>这是把更纱黑体的字体信息更换为微软雅黑后打包的字体，便于替换系统字体后能被正常调用</p>
+<p>解压到C:\sarasa<br>点击设置<br><img src="/2022/04/14/%E6%9B%BF%E6%8D%A2Windows%E7%B3%BB%E7%BB%9F%E5%AD%97%E4%BD%93%E4%B8%BA%E6%9B%B4%E7%BA%B1%E9%BB%91%E4%BD%93/1.webp"><br>进入更新和安全-恢复-高级启动-立即重新启动<br>重新启动后进入命令提示符<br>登入后输入命令<br>进行备份</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir C:\backup</span><br><span class="line">xcopy C:\Windows\Fonts\msyh* C:\backup</span><br></pre></td></tr></table></figure>
+<p>正式覆盖</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xcopy C:\sarasa\ C:\Windows\Fonts\</span><br></pre></td></tr></table></figure>
+
+<p>然后在提示是否覆盖时按A (全部覆盖)<br>关闭,重启,完成</p>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="icon arrow-left"></div>
+                <div class="post-link">
+                    <a href="/2024/01/11/%E5%85%B3%E4%BA%8E%E5%8F%8C%E6%8B%BC/">Prev</a>
+                </div>
+            
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2021/01/15/%E7%BB%99biscuitggq%E7%9A%84%E7%BA%A2%E8%AD%A6%E8%81%94%E6%9C%BA%E6%95%99%E7%A8%8B/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+                治肾亏，不含糖
+                <br>
+            
+            
+            
+                Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & <a target="_blank" rel="noopener" href="https://github.com/zoeingwingkei/frame/">Frame</a>
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    
+    
+
+  </body>
+</html>
