@@ -1,15 +1,15 @@
 .highlight {
-  background: #313244;
-  color: #cdd6f4;
+  background: $ctp-surface0;
+  color: $ctp-text;
 }
 .highlight .code .comment,
 .highlight .code .quote {
-  color: #7f849c;
+  color: $ctp-overlay1;
 }
 .highlight .code .keyword,
 .highlight .code .selector-tag,
 .highlight .code .addition {
-  color: #a6e3a1;
+  color: $ctp-green;
 }
 .highlight .code .number,
 .highlight .code .string,
@@ -17,14 +17,14 @@
 .highlight .code .literal,
 .highlight .code .doctag,
 .highlight .code .regexp {
-  color: #94e2d5;
+  color: $ctp-teal;
 }
 .highlight .code .title,
 .highlight .code .section,
 .highlight .code .name,
 .highlight .code .selector-id,
 .highlight .code .selector-class {
-  color: #89b4fa;
+  color: $ctp-blue;
 }
 .highlight .code .attribute,
 .highlight .code .attr,
@@ -32,7 +32,7 @@
 .highlight .code .template-variable,
 .highlight .code .class .title,
 .highlight .code .type {
-  color: #fab387;
+  color: $ctp-peach;
 }
 .highlight .code .symbol,
 .highlight .code .bullet,
@@ -42,14 +42,14 @@
 .highlight .code .selector-attr,
 .highlight .code .selector-pseudo,
 .highlight .code .link {
-  color: #f38ba8;
+  color: $ctp-red;
 }
 .highlight .code .built_in,
 .highlight .code .deletion {
-  color: #cba6f7;
+  color: $ctp-mauve;
 }
 .highlight .code .formula {
-  background: #181825;
+  background: $ctp-mantle;
 }
 .highlight .code .emphasis {
   font-style: italic;
@@ -58,14 +58,14 @@
   font-weight: bold;
 }
 .highlight .code .function {
-  color: #f5c2e7;
+  color: $ctp-pink;
 }
 .highlight .code .params {
-  color: #74c7ec;
+  color: $ctp-sapphire;
 }
 .highlight .code .tag {
-  color: #f2cdcd;
+  color: $ctp-flamingo;
 }
 .highlight .code .property {
-  color: #b4befe;
+  color: $ctp-lavender;
 }
